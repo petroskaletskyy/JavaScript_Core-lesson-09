@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+<title>Lesson 09 - AJAX</title>
+<style>
+.errors {
+	border-color: red;
+	background-color: #f4aeb2;
+}
+.invisible {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}
+</style>
+</head>
+<body>
+
+<h1>Input form</h1>
+	<form>
+		<label>Прізвище</label><br> <input type="text" id="getLastName"><br>
+		<label>Ім"я</label><br> <input type="text" id="getFirstName"><br>
+		<label>Вік</label><br> <input type="text" id="getAge"><label class='invisible' id='ageLabel'>Вік має бути в межах від 0 до 100</label><br>
+		<label>Місце проживання</label><br> <input type="text" id="getAddress"><br>
+		<br> <input type="button" value="Send by Get"
+			onclick="sendDataByGetMethod()">
+		<input type="button" value="Send by Post"
+			onclick="sendDataByPostMethod()">	
+
+	</form>
+
+<script src='scripts.js'></script>
+
+</body>
+</html>
